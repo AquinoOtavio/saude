@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vibra conexão</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/menuu.css">
+  <link rel="stylesheet" href="./styles/home.css">
+</head>
+
+<body>
+  <!--NAVBAR-->
+  <header class="containerHeader">
+    <div class="overload">
+      <nav class="navigation">
+        <div class="logo">
+          <a href="index.html"><img src="./images/logo-certo.png" alt="Saúde para todos"></a>
+        </div>
+
+      </nav>
+
+      <div class="descriptionHeader">
+        <h1>Conheça o Sensus </h1>
+        <p>Relógio com tecnologia de aromaterapia calmante e monitoramento cardíaco.</p>
+        <button><a id="buttonLogin" href="" style="text-decoration: none; color: rgb(255, 255, 255);">Comprar Agora</a></button>
+      </div>
+
+      
+
+
+  </header>
+
+  <!--Section 1-->
+  <section class="container1">
+    <div>
+      <h1>Oferta imperdivel</h1>
+      <p>De R$390,00 por R$300,00! Aproveite essa promoção exclusiva e leve para casa o Sensus, o relógio que une sofisticação, saúde e bem-estar. Não perca essa oportunidade de cuidar de você por um preço especial!.</p>
+    </div>
+    <div class="container">
+      <button><a href="/pages/register.html" style="color: white; text-decoration: none;">Comprar agora</a></button>
+      <div class="image">
+        <img src="./images/2rg.png" alt="Consulta" />
+      </div>
+    </div>
+  </section>
+  <!--SERVICE 1-->
+  <div class="service1" id="service1">
+    <div class="imageOption">
+      <img src="./images/fundo.jpeg" alt="service" />
+    </div>
+    <div class="description">
+      <h2>OBJETIVOS</h2>
+      <h2>MISSÃO</h2>
+      <p>
+        Ajudar pessoas a alcançarem o equilíbrio e a paz interior por meio da profunda conexão entre corpo e mente. Nosso propósito é inspirar uma jornada de autoconhecimento, oferecendo soluções que promovem bem-estar, serenidade e qualidade de vida no dia a dia.
+      </p>
+   
+    </div>
+  </div>
+
+  <!--SERVICE 2-->
+  <div class="service2" id="service2">  
+    <div class="imageOption">
+      <img src="./images/1.jpeg" alt="service" />
+    </div>
+    <div class="description">
+      <h2>VISÃO</h2>
+      <p>
+       Ser reconhecida como a marca líder em bem-estar e tecnologia, promovendo harmonia entre o físico, o emocional e o mental. Buscamos transformar a forma como as pessoas se conectam consigo mesmas e com o mundo ao redor, tornando o equilíbrio acessível a todos.
+      </p>
+    </div>
+  </div>
+    <div class="service1" id="service1">
+    <div class="imageOption">
+      <img src="./images/2.png" alt="service" />
+    </div>
+    <div class="description">
+      <h2>VALORES </h2>
+      <p>
+            Conexão: Cultivamos a harmonia interna e externa, valorizando o elo entre o ser humano e o ambiente em que vive.
+<p>Presença: Acreditamos no poder de viver o agora, com atenção, consciência e gratidão.</p>
+<p>Bem-estar: Nosso foco é cuidar da saúde e do equilíbrio integral de cada pessoa, com empatia, inovação e respeito.</p>
+      </p>
+   
+    </div>
+  </div>
+  <footer class="footer-container">
+    <div class="footer-content">
+      <div class="footer-right">
+        <img src="images/logo-certo.png" alt="imagem do logo" />
+        <ul class="nav-list-footer">
+          <li class="footer-item-list">
+            <a class="footer-item-link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer-left">
+        <p>Copyright ©. Todos os direitos reservados à Sensus.</p>
+        <img src="images/logo-certo.png" alt="logo" />
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/home.js"></script>
+
+  <script> //menu-hamburguer
+    function toggleMenu(event) {
+      event.stopPropagation();
+      var menu = document.getElementById('menuOptions');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+      }
+    }
+
+    function toggleDescription(event, descId) {
+      event.preventDefault();
+      event.stopPropagation();
+      var description = document.getElementById(descId);
+      if (description.style.display === 'block') {
+        description.style.display = 'none';
+      } else {
+        description.style.display = 'block';
+      }
+    }
+
+    // Fechar o menu se clicar fora dele
+    window.onclick = function (event) {
+      var menu = document.getElementById('menuOptions');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
